@@ -1,0 +1,10 @@
+---
+# vars file for elastic_repo
+
+elastic_repo_gpg_url: "https://artifacts.elastic.co/GPG-KEY-elasticsearch"
+
+_elastic_repo_apt_repo:
+  elastic: "deb https://artifacts.elastic.co/packages/7.x/apt stable main"
+  oss: "deb https://artifacts.elastic.co/packages/oss-7.x/apt stable main"
+
+elastic_repo_apt_repo: "{{ _elastic_repo_apt_repo[elastic_repo_license] }}"
