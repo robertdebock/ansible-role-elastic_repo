@@ -6,7 +6,7 @@
 
   tasks:
     - name: install elastic product
-      package:
+      ansible.builtin.package:
         name: "{{ item }}"
         state: present
       loop:
