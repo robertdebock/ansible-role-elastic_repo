@@ -3,6 +3,6 @@
 # Ansible managed
 #
 repository:
-  description: Install and configure elastic_repo on your system.
+  description: Install the Elastic repository on your system.
   homepage: https://robertdebock.nl/
   topics: elasticrepo, ansible, molecule, tox, playbook, hacktoberfest

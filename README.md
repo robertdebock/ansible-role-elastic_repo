@@ -1,6 +1,6 @@
 # [elastic_repo](#elastic_repo)
 
-Install and configure elastic_repo on your system.
+Install the Elastic repository on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
@@ -46,8 +46,9 @@ The default values for the variables are set in `defaults/main.yml`:
 # An alternative package which contains only features that are available
 # under the Apache 2.0 license is also available.
 
-# Elastic has two versions of the packages; "elastic" or "oss". The elastic
-# version has an "Elastic" license. The oss version uses the Apache 2.0 license.
+# Elastic has two versions of the packages:
+# - "elastic" using the "Elastic" license.
+# - "oss" using the Apache 2.0 license.
 elastic_repo_license: oss
 ```
 
@@ -79,7 +80,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 |---------|----|
 |amazon|all|
 |debian|all|
-|el|7, 8|
+|el|all|
 |fedora|all|
 |ubuntu|all|
 

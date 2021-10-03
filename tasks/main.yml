@@ -32,7 +32,7 @@
       yum_repository:
         name: elastic-7.x
         description: Elastic repository for 7.x packages
-        baseurl: https://artifacts.elastic.co/packages/7.x/yum
+        baseurl: "{{ elastic_repo_rpm_repo }}"
         gpgkey: "{{ elastic_repo_gpg_url }}"
   when:
     - ansible_pkg_mgr in [ "dnf", "rpm", "yum" ]

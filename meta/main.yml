@@ -3,7 +3,7 @@ galaxy_info:
   author: Robert de Bock
   role_name: elastic_repo
   namespace: robertdebock
-  description: Install and configure elastic_repo on your system.
+  description: Install the Elastic repository on your system.
   license: Apache-2.0
   company: none
   min_ansible_version: 2.9
