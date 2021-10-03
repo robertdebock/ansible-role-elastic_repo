@@ -5,6 +5,10 @@
   gather_facts: no
 
   tasks:
-    - name: install metricbeat
+    - name: install elastic product
       package:
-        name: metricbeat
+        name: "{{ item }}"
+        state: present
+      loop:
+        - metricbeat
+        - elasticsearch
