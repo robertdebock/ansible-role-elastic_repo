@@ -5,4 +5,4 @@
 repository:
   description: Install the Elastic repository on your system.
   homepage: https://robertdebock.nl/
-  topics: elasticrepo, ansible, molecule, tox, playbook, hacktoberfest
+  topics: elasticrepo, ansible, molecule, tox, playbook
