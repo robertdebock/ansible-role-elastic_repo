@@ -5,7 +5,7 @@
   gather_facts: no
 
   tasks:
-    - name: install elastic product
+    - name: Install elastic product
       ansible.builtin.package:
         name: "{{ item }}"
         state: present
