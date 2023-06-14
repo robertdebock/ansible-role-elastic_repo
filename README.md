@@ -12,13 +12,15 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-- name: converge
+- name: Converge
   hosts: all
   become: yes
   gather_facts: yes
 
   roles:
     - role: robertdebock.elastic_repo
+      elastic_repo_cleanup_requirements: no
+      elastic_repo_revert_crypto_policy: no
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/robertdebock/ansible-role-elastic_repo/blob/master/molecule/default/prepare.yml):
@@ -53,6 +55,14 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 # - "elastic" using the "Elastic" license.
 # - "oss" using the Apache 2.0 license.
 elastic_repo_license: oss
+
+# An extra package is required for RHEL9 (`crypto-policies-scripts`).
+# This variable determines if it should be removed or not.
+elastic_repo_cleanup_requirements: yes
+
+# The crypto policy must be modified on RHEL9. This variable determines if
+# the policy should be switched back to the default.
+elastic_repo_revert_crypto_policy: yes
 ```
 
 ## [Requirements](#requirements)

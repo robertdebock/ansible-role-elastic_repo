@@ -6,3 +6,5 @@
 
   roles:
     - role: ansible-role-elastic_repo
+      elastic_repo_cleanup_requirements: no
+      elastic_repo_revert_crypto_policy: no

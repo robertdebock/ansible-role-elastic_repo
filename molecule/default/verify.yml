@@ -11,4 +11,3 @@
         state: present
       loop:
         - metricbeat
-        - elasticsearch-oss
