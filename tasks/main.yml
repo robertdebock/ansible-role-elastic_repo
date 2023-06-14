@@ -45,6 +45,7 @@
         - name: Switch to legacy crypto policy
           ansible.builtin.command:
             cmd: update-crypto-policies --set LEGACY
+          changed_when: yes
           when:
             - elastic_repo_current_crypto_policy.stdout != "LEGACY"
           notify:

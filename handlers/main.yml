@@ -4,6 +4,7 @@
 - name: Switch back to default crypto policy
   ansible.builtin.command:
     cmd: update-crypto-policies --set DEFAULT
+  changed_when: yes
   when:
     - elastic_repo_revert_crypto_policy
 
