@@ -1,4 +1,4 @@
-# Ansible role [elastic_repo](#elastic_repo)
+# [Ansible role elastic_repo](#elastic_repo)
 
 Install the Elastic repository on your system.
 
