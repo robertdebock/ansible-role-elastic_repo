@@ -1,13 +1,5 @@
 ---
 
-- name: assert | Test elastic_repo_license
-  ansible.builtin.assert:
-    that:
-      - elastic_repo_license is defined
-      - elastic_repo_license is string
-      - elastic_repo_license in [ "elastic", "oss" ]
-    quiet: yes
-
 - name: assert | Test elastic_repo_cleanup_requirements
   ansible.builtin.assert:
     that:
