@@ -1,5 +1,7 @@
 # [Ansible role elastic_repo](#elastic_repo)
 
+> THIS ROLE HAS BEEN ARCHIVED AS OF DEC 2023.
+
 Install the Elastic repository on your system.
 
 |GitHub|GitLab|Downloads|Version|
